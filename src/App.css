@@ -3,21 +3,21 @@
 }
 
 .App-logo {
-  height: 40vmin;
+  height: 20vmin;
   pointer-events: none;
 }
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+    /* animation: App-logo-spin infinite 20s linear;*/
   }
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #595d65;
   min-height: 100vh;
   display: flex;
-  flex-direction: column;
+  flex-direction:row;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
@@ -35,4 +35,40 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+/* gestione nav bar */
+
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: #7b6666;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float:inline-start;
+  display:inline;
+  color: #f2f2f2;
+  text-align:start;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add an active class to highlight the current page */
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
 }
